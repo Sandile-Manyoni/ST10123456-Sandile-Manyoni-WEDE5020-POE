@@ -556,3 +556,48 @@ color: greenyellow;
 margin-top: 20px;
 
 }
+
+/* Styling for the tabs */
+.tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.tab {
+    padding: 12px 24px;
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s ease;
+    list-style: none;
+    margin-right: 5px;
+}
+
+.tab:hover {
+    background: #e9ecef;
+}
+
+.tab.active {
+    background: #ffffff;
+    border-bottom: 1px solid white;
+    color: #495057;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    margin-top: -1px;
+    background: white;
+}
+
+.tab-content.active {
+    display: block;
+}
